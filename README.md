@@ -72,6 +72,7 @@ Open http://localhost:8080
 <img width="1754" height="624" alt="image" src="https://github.com/user-attachments/assets/23b590fa-b36c-4dd8-81d3-4c33ec2765a6" />
 
 
+
 📄 License
 
 This project is licensed under the MIT License
