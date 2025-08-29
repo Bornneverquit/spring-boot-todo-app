@@ -41,9 +41,10 @@ View (Thymeleaf + Bootstrap) <--------
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
-```bash
+```
 git clone https://github.com/your-username/todo-app.git
 cd todo-app
+```
 
 2. Configure Database
 
@@ -51,16 +52,27 @@ Create a MySQL database, e.g., todo_db
 
 Update application.properties with your DB credentials:
 
+```
 spring.datasource.url=jdbc:mysql://localhost:3306/todo_db
 spring.datasource.username=YOUR_USERNAME
 spring.datasource.password=YOUR_PASSWORD
 spring.jpa.hibernate.ddl-auto=update
-
+```
 3. Run the Project
+```
 mvn spring-boot:run
-
+```
 4. Access the App
 
 Open http://localhost:8080
  in your browser 🚀
+
+📸 Screenshot
+
+<img width="1754" height="624" alt="image" src="https://github.com/user-attachments/assets/23b590fa-b36c-4dd8-81d3-4c33ec2765a6" />
+
+
+📄 License
+
+This project is licensed under the MIT License
 
