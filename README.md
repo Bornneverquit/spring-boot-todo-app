@@ -1,6 +1,4 @@
-# spring-boot-todo-app
-
-# 📝 Todo Application
+# 📝 Todo Application (Spring boot)
 
 A minimal yet powerful **Task Management Application** built with **Spring Boot**, **Hibernate (JPA)**, and **MySQL**.  
 The app follows the MVC architecture and provides an intuitive UI with **Thymeleaf** and **Bootstrap CSS**.
@@ -28,4 +26,41 @@ The app follows the MVC architecture and provides an intuitive UI with **Thymele
 
 ## 🏗️ Architecture / Workflow
 This project follows the **MVC (Model–View–Controller)** pattern:
+
+User → Controller → Service → Repository → Database
+↑ ↓
+View (Thymeleaf + Bootstrap) <--------
+
+- **Controller**: Handles HTTP requests/responses  
+- **Service**: Business logic (task creation, toggle, delete)  
+- **Repository**: Data persistence with Hibernate/JPA  
+- **Database**: MySQL stores task data  
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
+
+2. Configure Database
+
+Create a MySQL database, e.g., todo_db
+
+Update application.properties with your DB credentials:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/todo_db
+spring.datasource.username=YOUR_USERNAME
+spring.datasource.password=YOUR_PASSWORD
+spring.jpa.hibernate.ddl-auto=update
+
+3. Run the Project
+mvn spring-boot:run
+
+4. Access the App
+
+Open http://localhost:8080
+ in your browser 🚀
 
